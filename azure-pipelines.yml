@@ -14,10 +14,10 @@ trigger:
   branches:
     include:
     - dotnet-runtime
-    
-- job: dotnet-runtime
-  condition: eq(variables['Build.SourceBranch'], 'refs/heads/dotnet-runtime')
-  steps:
-  - script: |
-    cd dotnet\1.1\runtime
-    echo hello 
+jobs:
+  - job: dotnet-runtime
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/dotnet-runtime')
+    steps:
+      - script: |
+      cd dotnet\1.1\runtime
+      echo hello 

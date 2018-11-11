@@ -17,6 +17,7 @@ jobs:
     pool:
       vmImage: 'Ubuntu 16.04'
     steps:
-      script: |
-        cd "dotnet/1.1/runtime"
-        echo hello 
+      - bash: |
+          cd "dotnet/1.1/runtime"
+          echo hello
+        condition: eq( variables.Agent.OS, 'Linux' )

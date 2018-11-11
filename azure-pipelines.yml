@@ -7,8 +7,17 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 variables:
-  imageName: 'your-container-image-name:$(build.buildId)'
-
-steps:
-- script: docker build -f Dockerfile -t $(imageName) .
-  displayName: 'docker build'
+  imageName: 'xbim/centos-dotnet:$(build.buildId)'
+  
+name: dotnet-runtime
+trigger:
+  branches:
+    include:
+    - dotnet-runtime
+    
+- job: dotnet-runtime
+  condition: eq(variables['Build.SourceBranch'], 'refs/heads/dotnet-runtime')
+  steps:
+  - script: |
+    cd dotnet\1.1\runtime
+    echo hello 

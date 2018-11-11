@@ -1,10 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
 - `sdk`, 
-    - [`sdk`, `sdk-1.0.4` (*sdk*)](https://github.com/xbIm/centos-docker-images/blob/master/dotnet/1.1/sdk/Dockerfile)
+    - [`sdk-1.0.4` (*sdk*)](https://github.com/xbIm/centos-docker-images/blob/master/dotnet/sdk/1.0.4/Dockerfile)
+	- [`sdk`, `sdk-2.1.403` (*sdk*)](https://github.com/xbIm/centos-docker-images/blob/master/dotnet/2.1.403/sdk/Dockerfile)
 - `runtime`, 
-    - [`runtime`, `runtime-1.1.2` (*sdk*)](https://github.com/xbIm/centos-docker-images/blob/master/dotnet/1.1/sdk/Dockerfile)
-
+    - [`runtime-1.1.2` (*sdk*)](https://github.com/xbIm/centos-docker-images/blob/master/dotnet/runtime/1.1.2/Dockerfile)
+    - [`runtime`, `runtime-2.1.5` (*sdk*)](https://github.com/xbIm/centos-docker-images/blob/master/dotnet/runtime/2.1.5/Dockerfile)
 
 
 # What is Centos?
